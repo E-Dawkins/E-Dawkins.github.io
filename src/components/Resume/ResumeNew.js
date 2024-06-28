@@ -32,13 +32,29 @@ function ResumeNew() {
         </Row>
 
         <Row className="resume">
-          <Document file={pdf} className="d-flex justify-content-center">
-            <Page pageNumber={1} scale={width > 786 ? 1.5 : 0.6} />
-          </Document>
-          <p />
-          <Document file={pdf} className="d-flex justify-content-center">
-            <Page pageNumber={2} scale={width > 786 ? 1.5 : 0.6} />
-          </Document>
+          <div>
+            <div className="left-col">
+              <h1> EDUCATION </h1>
+              <h2> Academy of Interactive Entertainment </h2>
+              <h2 className="date"> 2022 </h2>
+              <li> Advanced Diploma of Professional Game Development </li>
+              <h2 className="date"> 2021 </h2>
+              <li> Diploma of Screen and Media </li>
+              <li> Diploma of Information Technology </li>
+            </div>
+
+            <div className="right-col">
+              <h1> PROFESSIONAL EXPERIENCE </h1>
+              <div>
+                <h2 className="date-right"> Mar 2024-Jun 2024 </h2>
+                <h2> Konami Australia </h2>
+              </div>
+              <li> Served as a major contributor to game software development, using C++. </li>
+              <li> Collaborated with teams of engineers, designers, artists, and QA to ensure quality and market criteria meet product plans and customer requirements. </li>
+              <li> Analyzed software requirements to determine feasibility of designs, timelines and completion schedules for product releases. </li>
+              <li> Worked with other departments as needed to resolve issues reported from the field. </li>
+            </div>
+          </div>
         </Row>
 
         <Row style={{ justifyContent: "center", position: "relative" }}>
