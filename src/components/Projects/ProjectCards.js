@@ -6,33 +6,47 @@ import { BsGithub } from "react-icons/bs";
 
 function ProjectCards(props) {
   return (
-    <Card className="project-card-view">
+    <Card className="project-card-view" >
       <Card.Img variant="top" src={props.imgPath} alt="card-img" />
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
-        <Button variant="primary" href={props.ghLink} target="_blank">
-          <BsGithub /> &nbsp;
-          {props.isBlog ? "Blog" : "GitHub"}
-        </Button>
-        {"\n"}
-        {"\n"}
 
-        {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
+        <br />
 
-        {!props.isBlog && props.demoLink && (
-          <Button
-            variant="primary"
-            href={props.demoLink}
-            target="_blank"
-            style={{ marginLeft: "10px" }}
-          >
-            <CgWebsite /> &nbsp;
-            {"Demo"}
-          </Button>
-        )}
+        <div style={{position: 'absolute', bottom: '10px', left: '0px', right: '0px'}}>
+          <div style={{display: 'flex', justifyContent: 'center'}}>
+            {props.ghLink && (
+              <Button 
+                variant="primary" 
+                href={props.ghLink} 
+                target="_blank"
+                style={{ marginRight: '15px' }}
+              >
+                <BsGithub /> &nbsp;
+                {props.isBlog ? "Blog" : "GitHub"}
+              </Button>
+            )}
+  
+            {"\n"}
+            {"\n"}
+          
+            {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
+          
+            {!props.isBlog && props.demoLink && (
+              <Button
+                variant="primary"
+                href={props.demoLink}
+                target="_blank"
+              >
+                <CgWebsite /> &nbsp;
+                {"Demo"}
+              </Button>
+            )}
+          </div>
+        </div>
       </Card.Body>
     </Card>
   );
