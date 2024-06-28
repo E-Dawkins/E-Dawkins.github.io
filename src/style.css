@@ -650,6 +650,20 @@ button:focus {
   width: 50%;
 }
 
+@media (max-width: 1200px) {
+  .resume div.left-col{
+    text-align: center;
+    float: none;
+    width: 100%;
+  }
+
+  .resume div.right-col{
+    text-align: center;
+    float: none;
+    width: 100%;
+  }
+}
+
 .resume li{
   color: whitesmoke;
   font-size: 1.3em;
