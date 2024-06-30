@@ -30,6 +30,7 @@ function Projects() {
               title="Ability System"
               description="A recreation of the ability system in the Dishonored franchise. Made as a personal side project."
               ghLink="https://github.com/E-Dawkins/AbilitySystem"
+              demoLink="https://github.com/E-Dawkins/ProjectDemos/blob/main/Ability%20System/AbilitySystem.md"
             />
           </Col>
 
@@ -49,7 +50,8 @@ function Projects() {
               isBlog={false}
               title="Shader Showcase"
               description="A shader playground that you can edit and interact with in real-time. Made for the Academy of Interactive Entertainment."
-              ghLink="https://github.com/E-Dawkins/AIE_Graphics"
+              ghLink="https://github.com/E-Dawkins/AIE_Graphics/tree/main/Unity/Graphics"
+              demoLink="https://github.com/E-Dawkins/ProjectDemos/blob/main/Shader%20Showcase/ShaderShowcase.md"
             />
           </Col>
 
@@ -69,6 +71,7 @@ function Projects() {
               isBlog={false}
               title="Wave Function Collapse"
               description="A simplified version of the wave function collapse algorithm, with additional tile-map clean up methods. Made as a personal side project."
+              demoLink="https://github.com/E-Dawkins/ProjectDemos/blob/main/Wave%20Function%20Collapse/WaveFunctionCollapse.md"
             />
           </Col>
 
@@ -78,6 +81,7 @@ function Projects() {
               isBlog={false}
               title="AI Showcase"
               description="Simple demonstration of the Dijkstra's and A-Star AI path finding algorithms, integrated with multiple steering behaviors. Made for the Academy of Interactive Entertainment."
+              demoLink="https://github.com/E-Dawkins/ProjectDemos/blob/main/AI%20Showcase/AIShowcase.md"
             />
           </Col>
         </Row>
